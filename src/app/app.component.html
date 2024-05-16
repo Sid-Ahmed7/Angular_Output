@@ -1,0 +1,9 @@
+<app-create-onomatopia (sendOnomatopiaToParent)="onReceiveNewOnomatopia($event)"></app-create-onomatopia>
+
+<div>
+  @for(onomatope of onomatopoeiaList; track onomatope) {
+    <ul>
+      <li>{{onomatope}}</li>
+    </ul>
+  }
+</div>
